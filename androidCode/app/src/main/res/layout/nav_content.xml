@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.delbert.daya.NavigationActivity"
+    tools:showIn="@layout/nav_app_bar">
+
+    <LinearLayout
+        android:id="@+id/btnTop"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/back_red"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btnRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="310dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/back_red"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="180dp"
+                android:src="@drawable/claim_bt"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="불편상황신고"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/btn119"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/navsos"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="긴급전화"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn112"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/navroad"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="도로상황신고"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnMap"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@drawable/back_blue"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/map_img" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="지도"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+        </LinearLayout>
+</LinearLayout>

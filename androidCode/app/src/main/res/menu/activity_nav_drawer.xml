@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="환영합니다" />
+
+    <group android:checkableBehavior="single">
+        <item android:title="제출 내역 보기">
+            <menu>
+                <item
+                    android:id="@+id/nav_roadSubmit"
+                    android:icon="@drawable/ic_action_make_available_offline"
+                    android:title="도로교통 신고" />
+                <item
+                    android:id="@+id/nav_lastSubmit"
+                    android:icon="@drawable/ic_action_directions"
+                    android:title="불편사항 신고" />
+
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+
+        <item android:title="기타">
+            <menu>
+                <item
+                    android:id="@+id/nav_rank"
+                    android:icon="@drawable/ic_action_edit"
+                    android:title="랭킹 보기" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_action_cancel"
+                    android:title="로그아웃" />
+            </menu>
+        </item>
+    </group>
+
+</menu>
